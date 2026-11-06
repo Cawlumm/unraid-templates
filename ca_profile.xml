@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>Templates for [Lyftr](https://github.com/Cawlumm/lyftr), an MIT-licensed workout and nutrition tracker, maintained by its developer. Lyftr runs as two containers: install Lyftr-Backend (the API and SQLite database) first, then Lyftr (the web UI). Report problems at https://github.com/Cawlumm/lyftr/issues; documentation is at https://lyftr-app.pages.dev.</Profile>
+  <Icon>https://raw.githubusercontent.com/Cawlumm/lyftr/main/apps/app/assets/icon.png</Icon>
+  <WebPage>https://github.com/Cawlumm/lyftr</WebPage>
+  <Forum>https://github.com/Cawlumm/lyftr/issues</Forum>
+</CommunityApplications>

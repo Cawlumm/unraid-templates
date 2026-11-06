@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Lyftr</Name>
+  <Repository>cwlumm/lyftr-frontend:v0.1.0-beta.9</Repository>
+  <Registry>https://hub.docker.com/r/cwlumm/lyftr-frontend</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Cawlumm/lyftr/issues</Support>
+  <Project>https://github.com/Cawlumm/lyftr</Project>
+  <ReadMe>https://lyftr-app.pages.dev</ReadMe>
+  <Overview>Lyftr is a workout and nutrition tracker: programs built from an 800+ exercise library, set-by-set logging with a rest timer, a calorie and macro diary with barcode scanning (Open Food Facts), and a bodyweight log. Light and dark themes, English and Spanish, and an Android app that connects to the same server.[br][br]This is the web UI. It needs the Lyftr-Backend template running first: set Backend address to the Unraid server's IP and the backend's API port, for example 192.168.1.10:3000.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Cawlumm/unraid-templates/main/templates/lyftr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Cawlumm/lyftr/main/apps/app/assets/icon.png</Icon>
+  <ExtraSearchTerms>fitness workout gym nutrition calories weight tracker</ExtraSearchTerms>
+  <Requires>The Lyftr-Backend container, installed and running.</Requires>
+  <Beta>true</Beta>
+  <License>MIT</License>
+  <Changes>https://github.com/Cawlumm/lyftr/releases/tag/v0.1.0-beta.9</Changes>
+  <Screenshot>https://raw.githubusercontent.com/Cawlumm/lyftr/main/site/src/assets/dashboard-charts-desktop.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Cawlumm/lyftr/main/site/src/assets/gym-mode-overview-desktop.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Cawlumm/lyftr/main/site/src/assets/food-desktop.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Cawlumm/lyftr/main/site/src/assets/active-workout-mobile.png</Screenshot>
+  <Config Name="Web UI Port" Target="80" Default="8080" Mode="tcp" Description="Host port for the web UI. Unraid's own UI usually holds port 80." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Backend address" Target="BACKEND_ORIGIN" Default="" Mode="" Description="host:port of the Lyftr-Backend container, without http://, e.g. 192.168.1.10:3000. If both containers share a custom Docker network, use Lyftr-Backend:3000." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
